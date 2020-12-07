@@ -1,0 +1,5 @@
+---
+title: "Daniel Kick"
+site: distill::distill_website
+listing: posts
+---
