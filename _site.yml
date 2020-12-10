@@ -1,12 +1,17 @@
 name: "danielkick.github.io"
 title: "Daniel Kick"
+theme: theme.css
 description: |
   Daniel Kick
 output_dir: "docs"
 navbar:
+  logo:
+    image: images/logo1.png
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output: 
+  distill::distill_article:
+#   css: styles.css
