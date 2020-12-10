@@ -1,13 +1,12 @@
 ---
-title: "Welcome to Daniel Kick"
+title: "Welcome!"
 description: |
-  Welcome to our new blog, Daniel Kick. We hope you enjoy 
-  reading what we have to say!
+  Welcome to my webpage. I hope you enjoy your stay!
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: Daniel Kick
+    url: https://danielkick.github.io/
+    affiliation: Schulz Lab, University of Missouri
+    affiliation_url: https://schulz.biology.missouri.edu/
 date: 12-06-2020
 output:
   distill::distill_article:

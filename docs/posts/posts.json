@@ -1,18 +1,19 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Daniel Kick",
-    "description": "Welcome to our new blog, Daniel Kick. We hope you enjoy \nreading what we have to say!",
+    "title": "Welcome!",
+    "description": "Welcome to my webpage. I hope you enjoy your stay!",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Daniel Kick",
+        "url": "https://danielkick.github.io/"
       }
     ],
     "date": "2020-12-06",
     "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2020-12-06T21:58:21-06:00",
+    "last_modified": "2020-12-09T21:59:43-06:00",
     "input_file": {}
   }
 ]
