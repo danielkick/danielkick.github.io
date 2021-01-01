@@ -1,0 +1,82 @@
+---
+title: "Seeing the Nernst Equation"
+description: |
+  A short description of the post.
+author:
+  - name: Daniel Kick
+    url: https://danielkick.github.io/
+date: 12-31-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+$$E_{ion} = \frac{RT}{zF}ln(\frac{ion_{outside}}{ion_{inside}})$$
+$$E_{ion} = \frac{61.5}{z}log_{10}(\frac{ion_{outside}}{ion_{inside}})$$
+
+```{r echo=TRUE}
+nernst_stp <- function(z = 1,
+                       ion_o = 1,
+                       ion_i = 10){
+  E_ion <- (61.5/z)*log10(ion_o/ion_i)
+  return(E_ion)
+}
+```
+
+
+
+```{r}
+use.len.out = 10
+
+df <- expand.grid(valence = c(-1, 1, 2),
+            mM.out = seq(0.1, 100, length.out = use.len.out),
+            mM.in = seq(0.1, 100, length.out = use.len.out))
+
+df$Erev <- nernst_stp(z = df$valence,
+                      ion_o = df$mM.out,
+                      ion_i = df$mM.in)
+
+plotly::plot_ly(data = df, 
+                x = ~mM.out, 
+               y = ~mM.in,
+               z = ~Erev,
+               color = ~valence,
+               group = ~valence
+              ) %>% 
+  plotly::add_markers()
+
+
+# car::scatter3d(x = df$mM.out, 
+#                y = df$mM.in, 
+#                z = df$Erev)
+# 
+# library(car)
+# car::scatter3d(x, y, z,
+# 	  xlab=deparse(substitute(x)), ylab=deparse(substitute(y)),
+# 	  zlab=deparse(substitute(z)), axis.scales=TRUE, axis.ticks=FALSE,
+# 	  revolutions=0,
+# 	  bg.col=c("white", "black"),
+# 	  axis.col=if (bg.col == "white") c("darkmagenta", "black", "darkcyan")
+# 		            else c("darkmagenta", "white", "darkcyan"),
+# 	  surface.col=carPalette()[-1], surface.alpha=0.5,
+# 	  neg.res.col="magenta", pos.res.col="cyan",
+# 	  square.col=if (bg.col == "white") "black" else "gray",
+# 	  point.col="yellow", text.col=axis.col,
+# 	  grid.col=if (bg.col == "white") "black" else "gray",
+# 	  fogtype=c("exp2", "linear", "exp", "none"),
+# 	  residuals=(length(fit) == 1),
+# 	  surface=TRUE, fill=TRUE,
+# 	  grid=TRUE, grid.lines=26, df.smooth=NULL, df.additive=NULL,
+# 	  sphere.size=1, radius=1, threshold=0.01, speed=1, fov=60,
+# 	  fit="linear", groups=NULL, parallel=TRUE,
+# 	  ellipsoid=FALSE, level=0.5, ellipsoid.alpha=0.1, id=FALSE,)
+
+
+```
