@@ -5,15 +5,15 @@
       "title": "About this blog",
       "description": "Some additional details about the blog",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-31T21:55:16-06:00"
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-31T23:12:32-06:00"
     },
     {
       "path": "index.html",
       "title": "Daniel Kick",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-31T21:55:17-06:00"
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-31T23:12:34-06:00"
     }
   ],
   "collections": ["posts/posts.json"]
