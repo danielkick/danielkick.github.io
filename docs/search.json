@@ -2,18 +2,17 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "Daniel R. Kick, PhD",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2020-12-31T23:12:32-06:00"
+      "contents": "\n\n          \n          \n          \n          \n          Daniel Kick\n          \n          \n          Home\n          About\n          ☰\n          \n          \n      \n        \n          \n            Daniel R. Kick, PhD\n          \n          \n            \n              I am a PhD Biologist and aspiring data scientist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data. Previously, I focused on compensation of neural circuits to aberrant activity.\n            \n            \n              I am a PhD Biologist and aspiring data scientist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data. Previously, I focused on compensation of neural circuits to aberrant activity.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Orcid\n                    \n                  \n                \n                                \n                  \n                    \n                      Google Scholar\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Orcid\n                  \n                \n                                \n                  \n                    Google Scholar\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2022-07-06T13:13:07-05:00"
     },
     {
       "path": "index.html",
-      "title": "Daniel Kick",
+      "title": "Gallery of featured posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-12-31T23:12:34-06:00"
+      "last_modified": "2022-07-06T13:13:10-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

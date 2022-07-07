@@ -2,3 +2,12 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+# cv related
+*.log
+*.cls
+*.sty
+*.pdf
+
+

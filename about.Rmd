@@ -1,9 +1,32 @@
 ---
-title: "About this blog"
-description: |
-  Some additional details about the blog
+title: "Daniel R. Kick, PhD"
+site: distill::distill_website
+image: "images/icon.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/daniel-kick-5a449b9a/"
+  - label: Orcid
+    url: "https://orcid.org/0000-0002-9002-1862"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?hl=en&user=5Sz0E-0AAAAJ"
+  - label: GitHub
+    url: "https://github.com/danielkick"
+  - label: Email
+    url: "mailto:daniel.r.kick@protonmail.com"
+output:
+  postcards::jolla
 ---
+ 
+I am a PhD Biologist and aspiring data scientist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data. Previously, I focused on compensation of neural circuits to aberrant activity. 
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+```{r eval=FALSE, include=FALSE}
+title: "About this blog"
+description: |
+  Some additional details about the blog
+```
+

@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nhere\nAny live cell with fewer than two live neighbours dies, as if by underpopulation.\nAny live cell with two or three live neighbours lives on to the next generation.\nAny live cell with more than three live neighbours dies, as if by overpopulation.\nAny dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntest with some classics\n\n\n\n\n\n\n\n\n\n\nWhat density is most conducive to survival?\n\n179.733 sec elapsed\n\n\n\n\n\n",
     "preview": "posts/2020-12-31-game-of-life/game-of-life_files/figure-html5/unnamed-chunk-5-1.png",
-    "last_modified": "2020-12-31T23:04:18-06:00",
+    "last_modified": "2022-05-16T21:29:56-05:00",
     "input_file": {}
   },
   {
@@ -30,7 +30,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-12-17T22:51:33-06:00",
+    "last_modified": "2022-05-16T21:29:56-05:00",
     "input_file": {}
   }
 ]

@@ -94,10 +94,10 @@ d-appendix {
 
 .distill-site-header {
   --title-size:       18px;
-  --text-color:       rgba(126, 149, 158, 0.8);
+  --text-color:       rgba(0, 0, 0, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       rgba(0, 0, 0, 0.8); 
+  --bkgd-color:       rgba(255, 255, 255, 0.8); 
 }
 
 .distill-site-footer {
