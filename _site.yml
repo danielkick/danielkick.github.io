@@ -5,17 +5,19 @@ description: |
   Daniel Kick
 output_dir: "docs"
 navbar:
-  logo:
-    image: images/logo1.png
+  # logo:
+  #   image: images/logo1.png
   right:
     - text: "About"
       href: about.html
     # - text: "Home"
     #   href: index.html
-    - text: "Portfolio"
-      href: portfolio.html
-    - text: "Posts"
-      href: posts.html
+    - text: "Research"
+      href: research-portfolio.html
+    - text: "Personal"
+      href: personal-portfolio.html
+    # - text: "Posts"
+    #   href: posts.html
     - text: "Resume"
       href: resume.pdf
     - text: "CV"

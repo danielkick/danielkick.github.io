@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% Adapted to be an Rmarkdown template by Rob J Hyndman
+% 23 November 2018
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,]{twentysecondcv}
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{csquotes}
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+\usepackage{booktabs}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+% Profile pic
+\profilepic{logo.png}
+
+\cvname{Daniel R. Kick PhD} % Your name
+
+\cvjobtitle{Research Geneticst} % Job title/career
+\cvdate{July 2022} % Date of birth or date of CV??
+\cvaddress{Room 213, Curtis Hall, University of Missouri-Columbia
+Columbia, MO
+65211} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{} % Phone number
+\cvsite{\href{http://orcid.org/0000-0002-9002-1862}{orcid.org/0000-0002-9002-1862}} % Personal website
+\cvmail{\href{mailto:daniel.r.kick@protonmail.com}{\nolinkurl{daniel.r.kick@protonmail.com}}} % Email address
+\cvtwitter{}
+\cvgithub{\href{https://github.com/danielkick}{danielkick}}
+\cvlinkedin{\href{https://www.linkedin.com/in/\url{https://www.linkedin.com/in/daniel-kick-5a449b9a/}}{\url{https://www.linkedin.com/in/daniel-kick-5a449b9a/}}}
+
+\lfoot{\sf Curriculum Vitae: Daniel R. Kick PhD}
+\rfoot{\sf\thepage}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+\aboutme{}
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+\makeprofile % Print the sidebar
+
+
+
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{profilepic}: A local file path to an image
+\item
+  \texttt{aboutme}: A short description that is included in a template
+  specific location
+\item
+  \texttt{headcolor}: A featured colour for the template
+\end{itemize}
+
+\hypertarget{in-brief}{%
+\section{In Brief:}\label{in-brief}}
+
+\begin{itemize}
+\tightlist
+\item
+  I'm interested in applying statistical and computational tools to
+  better predict and explain biological effects. I aim to use these
+  techniques to improve food security by assisting in generation of
+  cultivates with high yield that are robust to variable weather.
+\item
+  During graduate school I focused on connecting ion channel mRNA
+  abundances to electrophysiological properties and homeostatic tuning
+  within neurons.
+\item
+  Now, as a Post-Doc with the USDA-ARS I focus on using deep learning to
+  improve yield prediction by better representing interaction effects
+  between genetic, enviromental, and management effects.
+\end{itemize}
+
+\hypertarget{selected-skills}{%
+\section{Selected Skills}\label{selected-skills}}
+
+\begin{itemize}
+\item
+  R (Tidyverse, Shiny (see
+  \href{https://github.com/danielkick/MultiMethodPhysApp}{source},
+  \href{https://danielkick.shinyapps.io/BioSc3700_1/}{deployed})
+\item
+  Python (Pandas, Numpy, Plotly)
+\item
+  Bash, git, Vim, slurm, basic singularity, basic docker
+\item
+  Statistics (Parametric, basic Bayesian modeling, Resampling)
+\item
+  Machine Learning, Deep Learning (Keras, Scikit-learn, Caret)
+\item
+  Electrophysiology (voltage, current, and dynamic clamp),
+  Microdissection
+\item
+  Scientific communication, Scientific writing, Figure generation
+  (Inkscape)
+\end{itemize}
+
+\hypertarget{professional-experience}{%
+\section{Professional Experience}\label{professional-experience}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2021-Present}{Research Geneticist}{USDA-ARS}{Responsibilities include: Aggregating, cleaning, and imputing public datasets, tuning and training deep learning models using Keras, assisting an undergraduate run high throughput phenotyping project, and producing scripts to streamline the same. This is a post-doctoral research position overseen by Dr. Jacob D. Washburn.\par\empty}
+\end{twenty}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2021 Ph.D.}{University of Missouri, Columbia, MO}{Coursework included: Grant Writing, Quantitative Methods in the Life Sciences, and Machine Learning Methods for Biomedical Informatics}{(3.97/4 GPA)\par\empty}
+    \twentyitem{2015 B.S.}{Truman State University, Kirksville, MO}{Coursework included: Next Generation Sequence Data and Analysis, Bioinformatics, Analysis of Variance and Experimental Design, Non-Parametric Statistics, and Economic \& Medicinal Botany.}{(3.65/4 GPA)\par\empty}
+\end{twenty}
+
+\hypertarget{short-courses-and-workshops}{%
+\section{Short Courses and
+Workshops}\label{short-courses-and-workshops}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2020}{Software Carpentry: Python}{University of Missouri, Columbia, MO}{Two-day workshop providing hands on experience working with Python, Git, and Unix Shell.\par\empty}
+    \twentyitem{2017}{Diversity \& Inclusion Workshop}{University of Missouri, Columbia, MO}{Six-hour workshop covering implicit bias and inclusive practices.\par\empty}
+    \twentyitem{2016}{Big Data in Biology}{University of Texas, Austin, TX}{Weeklong short courses in bioinformatics: Introduction to Core NGS Tools and Introduction to RNA-Seq\par\empty}
+\end{twenty}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2016—2021}{PhD Candidate}{Dr. David Schulz (University of Missouri)}{Analyzed the efficacy of machine learning methods to reproduce neuron cell types given mRNA abundances. (see Northcutt et al. 2019). • Described regulation of gap junction conductance controlled by timing of activity in the Cancer borealis cardiac ganglion. • Contrasted responses in cell activity, membrane currents, and channel mRNA abundances in response to potassium channel blockade after one or twenty-four hours in the Cancer borealis cardiac ganglion.\par\empty}
+    \twentyitem{2015}{PhD Student}{Dr. Lorin Milescu (University of Missouri)}{• Devised and tested a protocol for live imaging Drosophila with a two-photon microscope.\par\empty}
+    \twentyitem{2015}{PhD Student}{Dr. Bing Zhang (University of Missouri)}{• Designed a machine to assay Drosophila climbing (used in Willenbrink et al. 2016) and quantified sleep patterns of Drosophila tyrosine hydroxylase mutants.\par\empty}
+    \twentyitem{2014-2015}{Undergraduate Research Assistant}{Dr. Diane Janick-Buckner \& Dr. Brent Buckner (Truman State University) }{• Prototyped a hydroponic growth chamber for root morphology characterization of maize mutants.\par\empty}
+    \twentyitem{2014}{REU Student}{Dr. Rahul Kanadia (University of Connecticut)}{ • Conduced a pilot study using in situ hybridization which implicated upregulation of the minor spliceosome in postponing retinal cell death. \par\empty}
+    \twentyitem{2013}{REU Student}{Dr. Christian Lorsen (University of Missouri)}{ • Measured motor function decline in a mouse model of spinal muscular atrophy receiving an oligonucleotide treatment.\par\empty}
+    \twentyitem{2011}{Student Volunteer}{Dr. Laszlo Kovacs (Missouri State University)}{• Refined a set of teaching labs to be used in a genetics course.\par\empty}
+\end{twenty}
+
+\hypertarget{teaching-experience}{%
+\section{Teaching Experience}\label{teaching-experience}}
+
+\begin{itemize}
+\item
+  Teaching Assistant (Animal Physiology Lab, University of Missouri)
+\item
+  Oversaw and coordinated transition of the lab to a hybrid then fully
+  online class model due to Covid-19.
+\item
+  Adapted and expanded materials to be suitable for remote learning.
+\item
+  Constructed and deployed a statistics web tool (source, deployed).
+  2018 -- 2021 Curriculum Consultant (Animal Physiology Lab, University
+  of Missouri) 2018
+\item
+  Updated curriculum and redesigned experiments placing a greater focus
+  primary literature and data analysis.
+\end{itemize}
+
+Teaching Assistant (Animal Physiology Lab, University of Missouri) •
+Assisted students through experiments. • Provided short weekly lectures.
+2015 -- 2016''
+
+\hypertarget{honors-and-awards}{%
+\section{Honors and Awards}\label{honors-and-awards}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2019}{J. Perry Gustafson Award}{University of Missouri }{\$2000\par\empty}
+    \twentyitem{2016 –2018}{NIH T32 Training Grant Recipient}{}{\$27,000 yearly\par\empty}
+    \twentyitem{2017}{NIH T32 Travel Award}{}{\$750\par\empty}
+    \twentyitem{2016}{NIH T32 Travel Award}{}{\$750\par\empty}
+    \twentyitem{2015}{Graduated Cum Laude}{Truman State University}{\empty\empty}
+\end{twenty}
+
+\hypertarget{outreach-and-communication}{%
+\section{Outreach and Communication}\label{outreach-and-communication}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2022}{Tools and Techniques for a Jupyter Based Scientific Workflow}{Invited Workshop, Bioinformatics in Plant Science (BIPS)}{University of Missouri\par\empty}
+    \twentyitem{2019}{Can mRNA expression recapitulate neuron cell types?}{Alumni Research Presentation}{Truman State University\par\empty}
+    \twentyitem{2019}{Spare the synapse, spoil the circuit}{Public presentation, Science on Tap}{Columbia Missouri\par\empty}
+    \twentyitem{2019}{Voltage Dependent modification of Electrical Synapses}{Biological Sciences Recruitment Poster Session}{University of Missouri\par\empty}
+    \twentyitem{2018}{Gap Junction Conductance Modulation Via Voltage}{Alumni Research Presentation}{Truman State University\par\empty}
+    \twentyitem{2017}{Please mind the gap: Network homeostatic plasticity in the Cancer borealis cardiac ganglion}{Alumni Research Presentation}{Truman State University\par\empty}
+    \twentyitem{2016}{The Tell-Tale Heart: Applying crustacean neurogenic hearts to basic neurosciences questions}{Alumni Research Presentation}{Truman State University\par\empty}
+    \twentyitem{2016}{Scientific Poster Judge}{Spring Undergraduate Research and Creative Achievements Forum}{University of Missouri\par\empty}
+\end{twenty}
+
+\hypertarget{mentoring}{%
+\section{Mentoring}\label{mentoring}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2017 – 2019}{Undergraduate Student}{Abby Beckerdite}{\empty\empty}
+    \twentyitem{2018 – 2018}{NSF REU Student}{Ayla Ross}{\empty\empty}
+    \twentyitem{2017 – 2017}{NSF REU Student}{Katlyn Sullivan}{\empty\empty}
+    \twentyitem{2016 – 2016}{Post-baccalaureate Scholar}{Rody Kingston}{\empty\empty}
+    \twentyitem{2016 – 2016}{NSF REU Student}{Kelly Hiersche}{\empty\empty}
+\end{twenty}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+
+\end{document}
