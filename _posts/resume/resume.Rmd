@@ -1,21 +1,29 @@
 ---
 name: Daniel R.
 surname: Kick PhD
-position: "Research Geneticst"
-address: "Room 213, Curtis Hall, University of Missouri-Columbia Columbia, MO 65211"
-phone: 
-www: "orcid.org/0000-0002-9002-1862"
-email: "daniel.r.kick@protonmail.com"
-twitter: 
+position: Research Geneticst
+address: Room 213, Curtis Hall, University of Missouri-Columbia Columbia, MO 65211
+phone: null
+www: orcid.org/0000-0002-9002-1862
+email: daniel.r.kick@protonmail.com
 github: danielkick
-linkedin: 
-bibliography: "cites.bib"
+linkedin: https://www.linkedin.com/in/daniel-kick-5a449b9a/
+#bibliography: cites.bib
+# profilepic: logo.png
+
 date: "`r format(Sys.time(), '%B %Y')`"
-output: vitae::moderncv
-editor_options: 
-  markdown: 
+output:  vitae::twentyseconds
+editor_options:
+  markdown:
     wrap: 72
 ---
+<!-- - `profilepic`: A local file path to an image -->
+<!-- - `aboutme`: A short description that is included in a template specific location -->
+<!-- - `headcolor`: A featured colour for the template -->
+
+
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -280,9 +288,9 @@ tribble(~Student, ~Type, ~Year,
 # Publications
 
 ```{r}
-library(dplyr)
+# library(dplyr)
 #knitr::write_bib(, "packages.bib")
 
-bibliography_entries("cites.bib") %>%
-  arrange(desc(author$family), issued)
+# bibliography_entries("cites.bib") %>%
+#   arrange(desc(author$family), issued)
 ```

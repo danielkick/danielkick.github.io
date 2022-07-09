@@ -17,7 +17,7 @@ output:
   postcards::jolla
 ---
  
-I am a PhD Biologist and aspiring data scientist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data. Previously, I focused on compensation of neural circuits to aberrant activity. 
+I am a PhD Biologist and aspiring data scientist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data. Previously, I focused on compensation of neural circuits to aberrant activity.
 
 
 ```{r setup, include=FALSE}
