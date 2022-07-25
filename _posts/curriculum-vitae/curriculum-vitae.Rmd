@@ -279,9 +279,61 @@ tribble(~Student, ~Type, ~Year,
 # Publications
 
 ```{r}
-# library(dplyr)
-#knitr::write_bib(, "packages.bib")
+tribble(
+  ~Title, ~Author, ~Year, ~Journal, 
+  
+  ## ====
+	"Timing dependent potentiation and depression of electrical synapses contributes to network stability in the crustacean cardiac ganglion",
+	"Kick, Daniel R. and Schulz, David J.",
+	"2022",
+	"Journal of Neuroscience", 
+  
+  ## ====
+  "Studying gap junctions with PARIS",
+  "Kick, Daniel R and Schulz, David J",
+   "2019",  
+  "Elife",
+  
+    ## ====
+  "Molecular profiling of single neurons of known identity in two
+               ganglia from the crab Cancer borealis",
+  "Northcutt, Adam J and Kick, Daniel R and Otopalik, Adriane G and
+               Goetz, Benjamin M and Harris, Rayna M and Santin, Joseph M and
+               Hofmann, Hans A and Marder, Eve and Schulz, David J",
+   "2019",
+  "Proc. Natl. Acad. Sci. U.S.A.",
+  
+  ## ====
+  "Dopamine maintains network synchrony via direct modulation of
+               gap junctions in the crustacean cardiac ganglion",
+  "Lane, Brian J and Kick, Daniel R and Wilson, David K and Nair,
+               Satish S and Schulz, David J",
+   "2018",
+  "Elife",
 
+  ## ====
+  "Variability in neural networks",
+  "Daniel R Kick; David J Schulz",
+"2018", 
+"Elife",
+  
+  
+  ## ====
+  "The Hillary Climber trumps manual testing: an automatic system for studying Drosophila climbing",
+  "Alex M. Willenbrink and Margo K. Gronauer and Leon F. Toebben and Daniel R. Kick and Madalyn Wells and Bing Zhang",
+  "Journal of Neurogenetics",
+  "2016"
+
+) %>% detailed_entries(Title, Author, Year, Journal)
+
+
+
+```
+
+
+```{r}
+# library(dplyr)
+# # knitr::write_bib(, "packages.bib")
 # bibliography_entries("cites.bib") %>%
 #   arrange(desc(author$family), issued)
 ```
