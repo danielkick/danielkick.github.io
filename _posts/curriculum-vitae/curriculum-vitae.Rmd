@@ -1,25 +1,23 @@
 ---
 name: Daniel R.
 surname: Kick PhD
-position: Research Geneticst
-address: Room 213, Curtis Hall, University of Missouri-Columbia Columbia, MO 65211
+position: "Research Geneticst"
+address: "Room 213 Curtis Hall, Univ. of MO, Columbia, MO 65211"
 phone: null
 www: orcid.org/0000-0002-9002-1862
-email: daniel.r.kick@protonmail.com
+email: "daniel.r.kick@protonmail.com"
 github: danielkick
-linkedin: https://www.linkedin.com/in/daniel-kick-5a449b9a/
-bibliography: cites.bib
+linkedin: daniel-kick-5a449b9a
 date: "`r format(Sys.time(), '%B %Y')`"
-output:  vitae::latexcv
-editor_options:
-  markdown:
-    wrap: 72
+output: 
+  vitae::moderncv:
+    theme: classic
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
-library(tibble)
+library(tidyverse)
 ```
 
 # In Brief:
@@ -74,7 +72,6 @@ tribble(
 "2021 Ph.D.", 
 "Coursework included: Grant Writing, Quantitative Methods in the Life Sciences, and Machine Learning Methods for Biomedical Informatics",
 "(3.97/4 GPA)",
-
 "Truman State University, Kirksville, MO", 
 "2015 B.S.", 
 "Coursework included: Next Generation Sequence Data and Analysis, Bioinformatics, Analysis of Variance and Experimental Design, Non-Parametric Statistics, and Economic & Medicinal Botany.", 
@@ -99,18 +96,15 @@ tribble(
 "University of Missouri, Columbia, MO",
 "Two-day workshop providing hands on experience working with Python, Git, and Unix Shell.",
 "2020",
-
 "Diversity & Inclusion Workshop",
 "University of Missouri, Columbia, MO",
 "Six-hour workshop covering implicit bias and inclusive practices.",
 "2017",
-
 "Big Data in Biology",
 "University of Texas, Austin, TX",
 "Weeklong short courses in bioinformatics: Introduction to Core NGS Tools and Introduction to RNA-Seq",	
 "2016") %>% 
   detailed_entries(Title, Year, Institution, Desc)
-
 ```
 
 
@@ -127,33 +121,26 @@ tribble(
   "PhD Candidate",
   "Dr. David Schulz (University of Missouri)",
   "Analyzed the efficacy of machine learning methods to reproduce neuron cell types given mRNA abundances. (see Northcutt et al. 2019). • Described regulation of gap junction conductance controlled by timing of activity in the Cancer borealis cardiac ganglion. • Contrasted responses in cell activity, membrane currents, and channel mRNA abundances in response to potassium channel blockade after one or twenty-four hours in the Cancer borealis cardiac ganglion.",
-
   "2015",
   "PhD Student",
   "Dr. Lorin Milescu (University of Missouri)",
   "• Devised and tested a protocol for live imaging Drosophila with a two-photon microscope.",
-
   "2015",
   "PhD Student",
   "Dr. Bing Zhang (University of Missouri)",
   "• Designed a machine to assay Drosophila climbing (used in Willenbrink et al. 2016) and quantified sleep patterns of Drosophila tyrosine hydroxylase mutants.",
-
 "2014-2015",
 "Undergraduate Research Assistant",
 "Dr. Diane Janick-Buckner & Dr. Brent Buckner (Truman State University) ",
 "• Prototyped a hydroponic growth chamber for root morphology characterization of maize mutants.",
-
-
 "2014",
 "REU Student",
 "Dr. Rahul Kanadia (University of Connecticut)",
 " • Conduced a pilot study using in situ hybridization which implicated upregulation of the minor spliceosome in postponing retinal cell death. ",
-
 "2013",
 "REU Student",
 "Dr. Christian Lorsen (University of Missouri)",
 " • Measured motor function decline in a mouse model of spinal muscular atrophy receiving an oligonucleotide treatment.",
-
 "2011", 
 "Student Volunteer", 
 "Dr. Laszlo Kovacs (Missouri State University)", 
@@ -213,7 +200,6 @@ tribble(
   "2015"  
   )  %>% 
   detailed_entries(Title, Year, Location, Awards)
-
 ```
 
 # Outreach and Communication
@@ -261,7 +247,6 @@ tribble(
   "University of Missouri", 
   "2016")  %>% 
   detailed_entries( Title, Year, Type, Location)
-
 ```
 
 # Mentoring
@@ -282,6 +267,12 @@ tribble(~Student, ~Type, ~Year,
 tribble(
   ~Title, ~Author, ~Year, ~Journal, 
   
+  ## ====
+	# "Title",
+	# "Kick, Daniel R., ... and Schulz, David J.",
+	# "2022",
+	# "In Submission", 
+    
   ## ====
 	"Timing dependent potentiation and depression of electrical synapses contributes to network stability in the crustacean cardiac ganglion",
 	"Kick, Daniel R. and Schulz, David J.",
@@ -310,7 +301,6 @@ tribble(
                Satish S and Schulz, David J",
    "2018",
   "Elife",
-
   ## ====
   "Variability in neural networks",
   "Daniel R Kick; David J Schulz",
@@ -323,11 +313,7 @@ tribble(
   "Alex M. Willenbrink and Margo K. Gronauer and Leon F. Toebben and Daniel R. Kick and Madalyn Wells and Bing Zhang",
   "Journal of Neurogenetics",
   "2016"
-
-) %>% detailed_entries(Title, Author, Year, Journal)
-
-
-
+) %>% detailed_entries(Title, Year, Author, Journal)
 ```
 
 
@@ -337,3 +323,14 @@ tribble(
 # bibliography_entries("cites.bib") %>%
 #   arrange(desc(author$family), issued)
 ```
+
+<!-- # Publications -->
+
+```{r eval=FALSE, include=FALSE}
+# library(dplyr)
+# knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+# 
+# bibliography_entries("packages.bib") %>%
+#   arrange(desc(author$family), issued)
+```
+
