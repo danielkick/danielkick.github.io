@@ -8,18 +8,18 @@ navbar:
   # logo:
   #   image: images/logo1.png
   right:
-    - text: "About"
-      href: about.html
+    # - text: "About"
+    #   href: about.html
     # - text: "Home"
     #   href: index.html
     - text: "Research"
       href: research-portfolio.html
-    - text: "Personal"
-      href: personal-portfolio.html
+    # - text: "Personal"
+    #   href: personal-portfolio.html
     # - text: "Posts"
     #   href: posts.html
-    - text: "Resume"
-      href: resume.pdf
+    # - text: "Resume"
+    #   href: resume.pdf
     - text: "CV"
       href: curriculum-vitae.pdf
     - icon: fa fa-linkedin

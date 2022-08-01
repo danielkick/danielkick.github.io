@@ -34,18 +34,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/resume/",
-    "title": "Untitled",
-    "description": {},
-    "author": [],
-    "date": "2022-07-06",
-    "categories": [],
-    "contents": "\noutput: distill::distill_article: self_contained: false —\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2022-07-09T07:32:14-05:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2020-12-31-game-of-life/",
     "title": "Game of Life",
     "description": "A short description of the post.",
