@@ -12,8 +12,8 @@ navbar:
     #   href: about.html
     # - text: "Home"
     #   href: index.html
-    - text: "Research"
-      href: research-portfolio.html
+    # - text: "Research"
+    #   href: research-portfolio.html
     # - text: "Personal"
     #   href: personal-portfolio.html
     # - text: "Posts"
