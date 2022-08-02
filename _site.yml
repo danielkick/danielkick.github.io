@@ -26,6 +26,8 @@ navbar:
       href: https://www.linkedin.com/in/daniel-kick-5a449b9a/
     - icon: fa fa-github
       href: https://github.com/danielkick 
+    - icon: fa fa-envelope
+      href: mailto:daniel.r.kick@protonmail.com
 output: 
   distill::distill_article:
 #   css: styles.css
