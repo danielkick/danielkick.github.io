@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nI provide assistance with project management, statistics, and programming to Dr. Michael Gray, Dr. Benton Berigan, and Sherryl Henderson (PhDc) in their study of neuronal property changes following spinal cord injury. (In Preparation) (Github)\nIn an ongoing collaboration, I provide analysis and domain expertise (along with Dr. David Schulz) to Dr. Satish Nair’s engineering lab. (In Preparation)\nCollaborating Dr. Adam J Northcutt, who acted as the biological lead on this project, I trained and evaluated machine learning models to classify neurons by their mRNA expression profiles. (Published in PNAS), GitHub )\nWorking with Dr. Brian Lane, I assisted with figure generation and analysis of physiological data. (Published in Elife)\n\n\n\n",
     "preview": {},
-    "last_modified": "2022-07-09T13:23:45-05:00",
+    "last_modified": "2022-07-09T11:23:45-07:00",
     "input_file": {}
   },
   {
@@ -30,7 +30,7 @@
     "categories": [],
     "contents": "\nMy PhD work focused on (1) how neuronal cell activity can change the strength of connections between cells, (2) how prolonged activity changes can alter excitability, membrane conductances, and mRNA expression, and (3) how closely mRNA abundances align with cell identity. This work was done with the mentorship of Dr. David Schulz and is available here.\nThe purpose of posts on these projects is not to restate the findings, but to shed light on the workflows and tricks that other budding researchers may find useful.\nIn brief, these studies address the following questions:\nHow does the difference of timing in activity between neurons change how easily influenced they are by partner cells? How does the difference between timing activity and ease of influence between cells alter cell output? (In revision) GitHub\nNeurons can compensate for short term (~1h) disruptions to their activity through altered membrane conductances. Are longer distruptions (24h) dealt with in the same way, or is compensation achieved through changes to other properties? (In preparation) GitHub\nHow well can machine learning use single cell transciptomic data or ion channel mRNA abundance recapitulate neuronal cell identity? (Published in PNAS) GitHub BitBucket\n\n\n\n",
     "preview": {},
-    "last_modified": "2022-07-09T13:24:33-05:00",
+    "last_modified": "2022-07-09T11:24:33-07:00",
     "input_file": {}
   },
   {
@@ -47,7 +47,7 @@
     "categories": [],
     "contents": "\nhere\nAny live cell with fewer than two live neighbours dies, as if by underpopulation.\nAny live cell with two or three live neighbours lives on to the next generation.\nAny live cell with more than three live neighbours dies, as if by overpopulation.\nAny dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntest with some classics\n\n\n\n\n\n\n\n\n\n\nWhat density is most conducive to survival?\n\n179.733 sec elapsed\n\n\n\n\n\n",
     "preview": "posts/2020-12-31-game-of-life/game-of-life_files/figure-html5/unnamed-chunk-5-1.png",
-    "last_modified": "2022-07-09T07:32:14-05:00",
+    "last_modified": "2022-07-09T05:32:14-07:00",
     "input_file": {}
   },
   {
@@ -64,7 +64,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2022-07-09T07:32:14-05:00",
+    "last_modified": "2022-07-09T05:32:14-07:00",
     "input_file": {}
   }
 ]

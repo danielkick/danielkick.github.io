@@ -793,6 +793,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1865,15 +1866,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2433,7 +2440,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Game of Life","description":"A short description of the post.","authors":[{"author":"Daniel Kick","authorURL":"https://danielkick.github.io/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-31T00:00:00.000-06:00","citationText":"Kick, 2020"}
+{"title":"Game of Life","description":"A short description of the post.","authors":[{"author":"Daniel Kick","authorURL":"https://danielkick.github.io/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-31T00:00:00.000-08:00","citationText":"Kick, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2445,14 +2452,13 @@ d-appendix d-footnote-list a.footnote-backlink {
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="../../curriculum-vitae.pdf">CV</a>
 <a href="https://www.linkedin.com/in/daniel-kick-5a449b9a/">
 <i class="fa fa-linkedin" aria-hidden="true"></i>
 </a>
 <a href="https://github.com/danielkick">
 <i class="fa fa-github" aria-hidden="true"></i>
 </a>
-<a href="mailto:daniel.r.kick@protonmail.com">
+<a href="mailto:hello@danielkick.com">
 <i class="fa fa-envelope" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>

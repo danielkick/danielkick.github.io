@@ -20,8 +20,8 @@ navbar:
     #   href: posts.html
     # - text: "Resume"
     #   href: resume.pdf
-    - text: "CV"
-      href: curriculum-vitae.pdf
+    # - text: "CV"
+    #   href: curriculum-vitae.pdf
     - icon: fa fa-linkedin
       href: https://www.linkedin.com/in/daniel-kick-5a449b9a/
     - icon: fa fa-github
