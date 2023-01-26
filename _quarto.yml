@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: ""
+  navbar:
+    left: 
+      - text: Home
+        href: index.qmd
+    right:
+      - text: Resume
+        href: resume.qmd
+      - text: CV
+        href: curriculum-vitae.qmd
+      - icon: github
+        href: https://github.com/danielkick
+      - icon: linkedin
+        href: https://www.linkedin.com/in/daniel-kick-5a449b9a/
+         
+
+  page-footer:
+    center: |
+      [Contact Daniel](mailto:hello@danielkick.com)
+    left: |
+      Made with [Quarto](https://quarto.org/)
+    right: |
+      [View the Source](https://github.com/danielkick/danielkick.github.io)
+    background: "#2780e3"  
+    
+    
+format:
+  html:
+    theme: 
+       light: cosmo
+       dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: false
+    code-block-bg: "lightgray"
+    code-block-border-left: "#31BAE9"
+    code-line-numbers: true
+    highlight-style: sphinx
+    css: styles.css
+
+editor: visual
+

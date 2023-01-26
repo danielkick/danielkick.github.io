@@ -1,0 +1,27 @@
+---
+title: "PhD Overview"
+description: |
+  High level overview of the research questions addressed in my thesis.
+author: [Daniel Kick]
+date: 07-09-2022
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+My PhD work focused on (1) how neuronal cell activity can change the strength of connections between cells, (2) how prolonged activity changes can alter excitability, membrane conductances, and mRNA expression, and (3) how closely mRNA abundances align with cell identity. This work was done with the mentorship of [Dr. David Schulz](https://dvdschulz.wixsite.com/website) and is available [here](https://doi.org/10.32469/10355/85790).
+
+The purpose of posts on these projects is not to restate the findings, but to shed light on the workflows and tricks that other budding researchers may find useful. 
+
+In brief, these studies address the following questions:
+
+1. How does the difference of timing in activity between neurons change how easily influenced they are by partner cells? How does the difference between timing activity and ease of influence between cells alter cell output? (In revision) [GitHub](https://github.com/danielkick/ElectricalSynapsePotentiation)
+
+1. Neurons can compensate for short term (~1h) disruptions to their activity through altered membrane conductances. Are longer distruptions (24h) dealt with in the same way, or is compensation achieved through changes to other properties? (In preparation) [GitHub](https://github.com/danielkick/mRNA24hLC)
+
+1. How well can machine learning use single cell transciptomic data or ion channel mRNA abundance recapitulate neuronal cell identity? (Published in [PNAS](https://www.pnas.org/doi/abs/10.1073/pnas.1911413116)) [GitHub](https://github.com/danielkick/STGmRNACellClassification) [BitBucket]()
+

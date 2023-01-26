@@ -1,0 +1,45 @@
+---
+title: "notes"
+---
+
+$\color{red}{\text{TODO:}}$ Add the following to \`\_quarto.yml\`
+
+1.  Re-list Projects
+
+<!-- -->
+
+2.  Restore search
+3.  Maybe restore title
+
+```{r}
+# website:
+#   title: "Portfolio"
+#   
+#   search: 
+#     location: navbar
+#     type: overlay
+#   navbar:
+#     left: 
+#       - text: Home
+#         href: index.qmd
+#       - text: Projects
+#         href: projects.qmd
+#     right:
+#       - text: Resume
+#         href: resume.qmd
+#       - text: CV
+#         href: curriculum-vitae.qmd
+#       - icon: github
+#         href: https://github.com/danielkick
+#       - icon: linkedin
+#         href: https://www.linkedin.com/in/daniel-kick-5a449b9a/
+
+```
+
+Directly usable icons can be found at:
+
+https://icons.getbootstrap.com/
+
+If you use gifs gzip to decrease size to prevent the website from becoming sluggish
+
+code highlighting can be found at https://quarto.org/docs/output-formats/html-code.html#highlighting

@@ -1,9 +1,0 @@
----
-title: "Gallery of featured posts"
-listing:
-  posts:
-    - 2022-07-05-curriculum-vitae
-    - 2020-12-31-game-of-life
-    - 2020-12-31-seeing-the-nernst-equation
-site: distill::distill_website
----

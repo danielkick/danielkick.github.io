@@ -1,8 +1,0 @@
----
-title: "Phd and Post-Doc Projects"
-listing:
-  posts:
-    - 2022-07-09-phd-overview
-    - 2022-07-09-postdoc-overview
-site: distill::distill_website
----

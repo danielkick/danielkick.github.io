@@ -1,0 +1,34 @@
+---
+title: "About"
+image: Headshot.png
+about:
+  template: jolla
+  links:
+    - icon: None #envelope
+      text: E-Mail
+      href: mailto:hello@danielkick.com
+    - icon: None #linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/daniel-kick-5a449b9a/
+    - icon: None 
+      text: Resume
+      href: https://github.com/danielkick/Resume/blob/main/Resume.pdf
+    - icon: None 
+      text: Curriculum-Vitae
+      href: https://github.com/danielkick/Resume/blob/main/Curriculum-Vitae.pdf
+    - icon: None #github
+      text: Github
+      href: https://github.com/danielkick 
+    - icon: None
+      text: ORCID
+      href: https://orcid.org/0000-0002-9002-1862
+    - icon: None
+      text: Google Scholar
+      href: https://github.com/danielkick
+---
+
+```{r, echo=FALSE, eval=FALSE}
+# this page is currently unlisted
+```
+
+I am a PhD Biologist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data using deep learning, machine learning, and statistical modeling. Previously, I focused on compensation of neural circuits to aberrant activity.
