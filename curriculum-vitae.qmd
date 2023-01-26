@@ -11,7 +11,6 @@ If no file appears, please check your downloads or follow this [link](https://gi
   src="pdfs/Curriculum-Vitae.pdf">
 </iframe>
 ```
-
 ```{=html}
 <html>
 <body>
