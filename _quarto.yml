@@ -21,8 +21,6 @@ website:
   page-footer:
     center: |
       [Contact Daniel](mailto:hello@danielkick.com)
-    left: |
-      Made with [Quarto](https://quarto.org/)
     right: |
       [View the Source](https://github.com/danielkick/danielkick.github.io)
     background: "#2780e3"  
@@ -31,8 +29,8 @@ website:
 format:
   html:
     theme: 
-       light: cosmo
-       dark: [cosmo, theme_dark_custom.scss]
+       light: [litera, theme_light_custom.scss]
+       dark:  [litera, theme_dark_custom.scss]
     code-link: true
     code-fold: false
     code-block-bg: "lightgray"
