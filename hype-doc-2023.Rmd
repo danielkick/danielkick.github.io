@@ -1,0 +1,116 @@
+---
+title: "Hype-Doc-2023"
+author: "Daniel Kick"
+date: "1/26/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Format taken from https://jvns.ca/blog/brag-documents/#template
+# See also https://aashni.me/blog/hype-yourself-youre-worth-it/
+
+```
+
+Problem: I have the feeling that I'm not growing technically and not sure how to ensure I 1) keep growing in a direction with utility 2) align that growth with publishable projects.
+
+Places for growth:
+
+-   Basic manipulation and understanding of genomes + gene networks
+
+    -   File manipulation, downsampling, gene identification, linkage disequalibrium
+
+    -   Gene pathways, GO terms
+
+-   Modeling:
+
+    -   GWAS
+
+        -   Can I perform and interpret GWAS?
+
+        -   Can I explain the basic theory behind it?
+
+    -   MLMs
+
+        -   How do they work under the hood? How are random effects encoded? Can I accurately explain the differences between fixed and random effects?
+
+        -   Can I understand the matrix notation? Could I puzzle out code from an equation if my life depended on it?
+
+        -   Can I explain correlation structures and how it factors into model fitting?
+
+        -   Can I extract and interpret breeding values from BLUPs and BLUEs?
+
+        -   Can I explain how spatial data can be included into a model?
+
+    -   Physiological growth models
+
+        -   Do I understand the basic theory?
+
+        -   Do I know how to get started using them if I needed to?
+
+    -   Neural nets
+
+        -   Can I satisfactorally explain the basics of a dnn?
+
+        -   Do I know when to use more complicated architectures/techniques (BNNs, Auto encoders, variational AEs, RNNs, Transformers, etc)
+
+        -   Would I be able to implement a more complicated model?
+
+        -   How much inference can I get from the predictions and inputs?
+
+            -   PDPs, LWRP, Salience, SHAP, LIME, etc.
+
+    -   Causality
+
+        -   Can I explain (at a high level) differerent ways to approach causality? (DAGs, residual discontinuity, others?)
+
+    -   Bayesian Statistics
+
+        -   Can I explain the advantages/disadvantages of using bayesian methods vs (RE)ML
+
+        -   Can I implement models (LM, MLM, BayesC) in STAN, PyMC3, or another related program?
+
+-   Data extraction
+
+    -   UAV data
+
+    -   Image analysis
+
+-   Selection
+
+    -   Can I explain the breeders equation and common breeding strategies?
+
+    -   Can I explain where modeling fits in and adds value
+
+# Goals for this year
+
+# Reflections
+
+-   What work do I feel most proud of?
+
+-   Are there themes in these projects I should be thinking about?
+
+-   What do I wish I was doing more/less of?
+
+-   Which of my projects had the effect I wanted, and which didn't
+
+-   What could have gone better with a project and what might I want to do differently?
+
+# Projects
+
+(contributions, components, instights) (impact)
+
+# Collaboration & mentorship
+
+# Design & documentation
+
+# Company building
+
+(things that help the company overall, not just your team/project) Recruiting, improving important processes
+
+# What you learned
+
+# Outside of work
+
+Blog postes, open source, talks/ panels

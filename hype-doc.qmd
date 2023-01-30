@@ -1,0 +1,31 @@
+---
+title: "Hype Document 2023"
+author: "Daniel Kick"
+date: "2023-01-26"
+categories: [Hype]
+---
+
+
+#Goals for this year
+
+#Reflections
+
+
+#Projects
+(contributions, components, instights) (impact)
+
+#Collaboration & mentorship
+
+#Design & documentation
+
+#Company building
+(things that help the company overall, not just your team/project)
+Recruiting, improving important processes
+
+#What you learned
+
+#Outside of work
+Blog postes, open source, talks/ panels
+
+
+
