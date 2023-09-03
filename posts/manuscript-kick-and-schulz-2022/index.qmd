@@ -1,0 +1,8 @@
+---
+title: "Timing-Dependent Potentiation and Depression of Electrical Synapses Contribute to Network Stability in the Crustacean Cardiac Ganglion"
+author: "Daniel Kick"
+date: "2022-08-31"
+image: "DALL·E 2023-08-25 18.12.52 - An expressive oil painting of the neurons in the stomatogastric ganglion of Cancer borealis, the jonah crab.png"
+---
+
+https://www.jneurosci.org/content/42/35/6751

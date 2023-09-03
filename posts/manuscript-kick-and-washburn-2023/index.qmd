@@ -1,0 +1,12 @@
+---
+title: "Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better Than Each Model Alone"
+author: "Daniel Kick"
+date: "2023-04-02"
+image: "DALL·E 2023-08-25 18.12.14 - An expressive oil painting of four robots carrying a corn cob to mankind.png"
+---
+
+https://www.biorxiv.org/content/10.1101/2023.03.30.532932v1
+
+
+
+

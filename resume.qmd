@@ -3,14 +3,14 @@ title: "Resume"
 preload-iframes: TRUE
 ---
 
-If no file appears, please check your downloads or follow this [link](https://github.com/danielkick/Resume/blob/main/Resume.pdf "Resume on Github") to GitHub.
+If no file appears, please follow this [link](https://github.com/danielkick/Resume/blob/main/Resume.pdf "Resume on Github") to GitHub.
 
 ```{=html}
-<iframe
-  width="800"
-  height="800"
-  src="pdfs/Resume.pdf">
-</iframe>
+<!-- <iframe -->
+<!--   width="800" -->
+<!--   height="800" -->
+<!--   src="pdfs/Resume.pdf"> -->
+<!-- </iframe> -->
 ```
 ```{=html}
 ```

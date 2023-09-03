@@ -7,11 +7,13 @@ website:
     left: 
       - text: Home
         href: index.qmd
+      # - text: Projects
+      #   href: projects.qmd
     right:
       - text: Resume
-        href: resume.qmd
+        href: https://github.com/danielkick/Resume/blob/main/Resume.pdf
       - text: CV
-        href: curriculum-vitae.qmd
+        href: https://github.com/danielkick/Resume/blob/main/Curriculum-Vitae.pdf
       - icon: github
         href: https://github.com/danielkick
       - icon: linkedin

@@ -13,6 +13,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/danielkick 
+    - icon: github
+      text: Github (USDA)
+      href: https://github.com/DanielKick-USDA
 ---
 
 I am a PhD Biologist working as a research geneticist. Currently, my research focuses on using deep learning to predict maize yield from genetic, environmental, and management data using deep learning, machine learning, and statistical modeling. Previously, I focused on compensation of neural circuits to aberrant activity.

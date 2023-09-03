@@ -1,0 +1,8 @@
+---
+title: "The Hillary Climber trumps manual testing: an automatic system for studying _Drosophila_ climbing"
+author: "Daniel Kick"
+date: "2016-09-16"
+image: "DALL·E 2023-08-25 17.54.36 - An expressive oil painting of a fruit fly, Drosophila melanogaster, in a test tube sleeping.png"
+---
+
+https://www.tandfonline.com/doi/abs/10.1080/01677063.2016.1255211

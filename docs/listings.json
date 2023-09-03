@@ -2,8 +2,14 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/manuscript-kick-and-washburn-2023/index.html",
+      "/posts/manuscript-kick-et-al-2023/index.html",
+      "/posts/manuscript-kick-and-schulz-2022/index.html",
+      "/posts/manuscript-northcutt-kick-et-al-2019/index.html",
+      "/posts/manuscript-kick-and-schulz-2019/index.html",
+      "/posts/manuscript-lane-et-al-2018/index.html",
+      "/posts/manuscript-kick-and-schulz-2018/index.html",
+      "/posts/manuscript-willenbrink-et-al-2016/index.html"
     ]
   }
 ]

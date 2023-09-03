@@ -1,0 +1,9 @@
+---
+title: "Yield prediction through integration of genetic, environment, and management data through deep learning"
+author: "Daniel Kick"
+date: "2023-01-10"
+image: "DALL·E 2023-08-25 18.10.04 - An expressive oil painting of a corn plants in several environments and a double helix in the background.png"
+---
+
+https://academic.oup.com/g3journal/article/13/4/jkad006/6982634
+
