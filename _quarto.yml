@@ -7,6 +7,8 @@ website:
     left: 
       - text: Home
         href: index.qmd
+      - text: Posts
+        href: posts/DanielKick/index.html
       # - text: Projects
       #   href: projects.qmd
     right:
