@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.553">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Daniel Kick">
-<meta name="dcterms.date" content="2023-04-02">
-
-<title>Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better Than Each Model Alone</title>
+<meta name="dcterms.date" content="2023-01-26">
+<title>Hype-Doc-2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +21,22 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -67,35 +62,29 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<link rel="stylesheet" href="../../styles.css">
+}</script><link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+<li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/DanielKick/index.html"> 
+    <a class="nav-link" href="./posts/DanielKick/index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="https://github.com/danielkick/Resume/blob/main/Resume.pdf"> 
 <span class="menu-text">Resume</span></a>
   </li>  
@@ -114,59 +103,144 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Ensemble of BLUP, Machine Learning, and Deep Learning Models Predict Maize Yield Better Than Each Model Alone</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Daniel Kick </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 2, 2023</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Hype-Doc-2023</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel Kick </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 26, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<p>https://www.biorxiv.org/content/10.1101/2023.03.30.532932v1</p>
+</header><p>Problem: I have the feeling that I’m not growing technically and not sure how to ensure I 1) keep growing in a direction with utility 2) align that growth with publishable projects.</p>
+<p>Places for growth:</p>
+<ul>
+<li>
+<p>Basic manipulation and understanding of genomes + gene networks</p>
+<ul>
+<li><p>File manipulation, downsampling, gene identification, linkage disequalibrium</p></li>
+<li><p>Gene pathways, GO terms</p></li>
+</ul>
+</li>
+<li>
+<p>Modeling:</p>
+<ul>
+<li>
+<p>GWAS</p>
+<ul>
+<li><p>Can I perform and interpret GWAS?</p></li>
+<li><p>Can I explain the basic theory behind it?</p></li>
+</ul>
+</li>
+<li>
+<p>MLMs</p>
+<ul>
+<li><p>How do they work under the hood? How are random effects encoded? Can I accurately explain the differences between fixed and random effects?</p></li>
+<li><p>Can I understand the matrix notation? Could I puzzle out code from an equation if my life depended on it?</p></li>
+<li><p>Can I explain correlation structures and how it factors into model fitting?</p></li>
+<li><p>Can I extract and interpret breeding values from BLUPs and BLUEs?</p></li>
+<li><p>Can I explain how spatial data can be included into a model?</p></li>
+</ul>
+</li>
+<li>
+<p>Physiological growth models</p>
+<ul>
+<li><p>Do I understand the basic theory?</p></li>
+<li><p>Do I know how to get started using them if I needed to?</p></li>
+</ul>
+</li>
+<li>
+<p>Neural nets</p>
+<ul>
+<li><p>Can I satisfactorally explain the basics of a dnn?</p></li>
+<li><p>Do I know when to use more complicated architectures/techniques (BNNs, Auto encoders, variational AEs, RNNs, Transformers, etc)</p></li>
+<li><p>Would I be able to implement a more complicated model?</p></li>
+<li>
+<p>How much inference can I get from the predictions and inputs?</p>
+<ul>
+<li>PDPs, LWRP, Salience, SHAP, LIME, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Causality</p>
+<ul>
+<li>Can I explain (at a high level) differerent ways to approach causality? (DAGs, residual discontinuity, others?)</li>
+</ul>
+</li>
+<li>
+<p>Bayesian Statistics</p>
+<ul>
+<li><p>Can I explain the advantages/disadvantages of using bayesian methods vs (RE)ML</p></li>
+<li><p>Can I implement models (LM, MLM, BayesC) in STAN, PyMC3, or another related program?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Data extraction</p>
+<ul>
+<li><p>UAV data</p></li>
+<li><p>Image analysis</p></li>
+</ul>
+</li>
+<li>
+<p>Selection</p>
+<ul>
+<li><p>Can I explain the breeders equation and common breeding strategies?</p></li>
+<li><p>Can I explain where modeling fits in and adds value</p></li>
+</ul>
+</li>
+</ul>
+<section id="goals-for-this-year" class="level1"><h1>Goals for this year</h1>
+</section><section id="reflections" class="level1"><h1>Reflections</h1>
+<ul>
+<li><p>What work do I feel most proud of?</p></li>
+<li><p>Are there themes in these projects I should be thinking about?</p></li>
+<li><p>What do I wish I was doing more/less of?</p></li>
+<li><p>Which of my projects had the effect I wanted, and which didn’t</p></li>
+<li><p>What could have gone better with a project and what might I want to do differently?</p></li>
+</ul></section><section id="projects" class="level1"><h1>Projects</h1>
+<p>(contributions, components, instights) (impact)</p>
+</section><section id="collaboration-mentorship" class="level1"><h1>Collaboration &amp; mentorship</h1>
+</section><section id="design-documentation" class="level1"><h1>Design &amp; documentation</h1>
+</section><section id="company-building" class="level1"><h1>Company building</h1>
+<p>(things that help the company overall, not just your team/project) Recruiting, improving important processes</p>
+</section><section id="what-you-learned" class="level1"><h1>What you learned</h1>
+</section><section id="outside-of-work" class="level1"><h1>Outside of work</h1>
+<p>Blog postes, open source, talks/ panels</p>
 
 
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -720,8 +794,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
@@ -733,8 +806,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
