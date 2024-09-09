@@ -1,0 +1,17 @@
+{
+  "hash": "65d87e736a59c1aa25f063eeda4f5070",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Using Simulations to Check Your Statistical Intuition\"\nauthor: \"Daniel Kick\"\ndate: 2021-3-23\nimage: \"https://upload.wikimedia.org/wikipedia/commons/3/3b/Alphabet_%281880%29_p.41.jpg\"\ncategories: \n  - code\n  - beginner\n  - r\n  - simulation\ndraft: false\neditor:\n  markdown: \n    wrap: 72\n---\n\n\nR's distribution simulation functions (e.g. `dbinom`, `runif`) make it\nquick and easy to double check one's intuitions. For example, I'd been\nthinking that under H0 the distribution of correlations from normal\nsamples should drop off sharply as you go away from 0 such that a shift\nin correlation from 0 -\\> 0.1 is much more likely than 0.8 -\\> 0.9.\n\nSo I used `purrr::map()` to run a quick simulation. Here we simulate the\nnull distribution based on 100,000 observations and compute the chance\nof a value being above 0.7. If it was uniform we would expect \\~15%\n(.03/2) of the distribution to be here but end up with \\~1.2% with the\ndrop off.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nset.seed(89745) \ncor_check <- map(1:100000, function(i){ \n  cor(rnorm(10), rnorm(10), method = \"pearson\") \n}) \ncor_check <- data.frame(cor = do.call(rbind, cor_check))\n\nmean(cor_check$cor >= 0.7)*100 \n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 1.227\n```\n\n\n:::\n\n```{.r .cell-code}\n#1.227 Percent \n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(cor_check, aes(x = cor))+\n  geom_histogram(binwidth = 0.05) \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

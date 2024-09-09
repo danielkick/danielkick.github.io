@@ -1,0 +1,17 @@
+{
+  "hash": "386f1ba6663c6c57c5ea145c7e16ab34",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"ggplot tips: markdown for italics in plots and adding breaks to color scaling\"\nauthor: \"Daniel Kick\"\ndate: 2021-3-5\nimage: \"https://upload.wikimedia.org/wikipedia/commons/1/17/Nightingale-mortality.jpg\"\ncategories: \n  - code\n  - beginner\n  - r\n  - tips\n  - ggplot\ndraft: false\neditor:\n  markdown: \n    wrap: 72\n---\n\n  Two tricks today:\n1. Scale fill functions can accept breaks and limit arguments so you don't have to use hacky workarounds like binning the data before plotting (which is what I usually do).\n2. `library(ggtext)` lets you render markdown within plots (e.g. for those pesky mRNAs)\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nset.seed(42)\ndf <- do.call(cbind, map(\n  1:5, \n  function(e){\n    data.frame(gene = rnorm(10))\n    })\n  )\n\ndf <- df |>\n  corrr::correlate() |>\n  corrr::shave() |> \n  pivot_longer(cols = starts_with('gene')) |> \n  rename(term2 = name, Cor = value) |> \n  drop_na()\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nCorrelation computed with\n• Method: 'pearson'\n• Missing treated using: 'pairwise.complete.obs'\n```\n\n\n:::\n\n```{.r .cell-code}\nhead(df)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 6 × 3\n  term   term2      Cor\n  <chr>  <chr>    <dbl>\n1 gene.1 gene   -0.375 \n2 gene.2 gene    0.440 \n3 gene.2 gene.1 -0.153 \n4 gene.3 gene   -0.404 \n5 gene.3 gene.1  0.465 \n6 gene.3 gene.2 -0.0600\n```\n\n\n:::\n:::\n\n\n\nBefore:\n\n::: {.cell}\n\n```{.r .cell-code}\ndf |> \n  ggplot(aes(term, term2, fill = Cor))+ \n  geom_tile()+ labs(x = \"mRNA\", y = \"\")+ \n  scale_fill_distiller(palette = \"PuOr\")+ \n  coord_fixed()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\nAfter:\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggtext) # https://github.com/wilkelab/ggtext\nlibrary(glue)\n\ndf |> \n  mutate(term = glue((\"<i>{term}</i>\"))) |>\n  ggplot(aes(term, term2, fill = Cor))+ \n  geom_tile()+ labs(x = \"mRNA\", y = \"\")+ \n  theme(axis.text.x = element_markdown(angle = 45))+ # <-- Note that we have element_markdown not element_text\nscale_fill_stepsn(\n  colors=RColorBrewer::brewer.pal(n = 8, name = \"PuOr\"), \n  na.value = \"transparent\", breaks=round(seq(-1, 1, length.out =8), digits = 2), \n  limits=c(-1,1) )\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
