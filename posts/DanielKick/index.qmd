@@ -12,4 +12,3 @@ page-layout: full
 title-block-banner: true
 ---
 
-Posts here written for at target audience of graduate students and undergraduates. Most are available on the [lab protocol website](https://jacobwashburn-usda.github.io/LabProtocols/posts/DanielKick/) of my postdoctoral lab.

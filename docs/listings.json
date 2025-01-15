@@ -2,7 +2,11 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/posts/DanielKick/240826_POSSE_Lab_Example/SchulzSlackExp/remake better_code.html",
       "/posts/DanielKick/index.html",
+      "/posts/DanielKick/2401024_n_dim_arrays_R_v_np/index.html",
+      "/posts/DanielKick/241007_simulating_unbalanced_test_sets/index.html",
+      "/posts/DanielKick/240905_postgres_via_parquet/index.html",
       "/posts/DanielKick/240702_r_GAPIT_container_en_masse/240624_r_GAPIT_container/index.html",
       "/posts/DanielKick/240624_r_GAPIT_container/index.html",
       "/posts/DanielKick/240624_linux_wsl_ln/index.html",
@@ -76,6 +80,10 @@
   {
     "listing": "/posts/DanielKick/index.html",
     "items": [
+      "/posts/DanielKick/240826_POSSE_Lab_Example/SchulzSlackExp/remake better_code.html",
+      "/posts/DanielKick/2401024_n_dim_arrays_R_v_np/index.html",
+      "/posts/DanielKick/241007_simulating_unbalanced_test_sets/index.html",
+      "/posts/DanielKick/240905_postgres_via_parquet/index.html",
       "/posts/DanielKick/240702_r_GAPIT_container_en_masse/240624_r_GAPIT_container/index.html",
       "/posts/DanielKick/240624_r_GAPIT_container/index.html",
       "/posts/DanielKick/240624_linux_wsl_ln/index.html",
